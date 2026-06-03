@@ -99,5 +99,4 @@ jobs:
 
       - name: Push Docker Image
         run: |
-          docker push \
-          ${{ secrets.DOCKER_USERNAME }}/flask-ci-demo:${{ github.sha }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/flask-ci-demo:${{ github.sha }}
